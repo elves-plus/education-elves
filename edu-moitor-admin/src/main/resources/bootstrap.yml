@@ -1,0 +1,24 @@
+server:
+  port: 28080
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: edu-monitor-admin
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+  cloud:
+    nacos:
+      config:
+        server-addr: 114.67.105.74:8848
+        file-extension: yaml
+        group: ${spring.profiles.active}
+        timeout: 6000
+        # 共享配置文件
+        shared-dataids: actuate-monitor.yml,nacos-discovery-dev.yml,log-dev.yml,server.yml
+        # 需要刷新的配置文件
+        refreshable-dataids: actuate-monitor.yml,nacos-discovery-dev.yml,log-dev.yml,server.yml
+

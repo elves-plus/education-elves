@@ -94,6 +94,14 @@
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
             </dependency>
+
+            <!-- 自定义starter jar包 -->
+
+            <dependency>
+                <artifactId>edu-common-starter</artifactId>
+                <groupId>com.cloud.edu</groupId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
