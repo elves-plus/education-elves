@@ -18,7 +18,7 @@ spring:
         group: ${spring.profiles.active}
         timeout: 6000
         # 共享配置文件
-        shared-dataids: actuate-monitor.yml,nacos-discovery-dev.yml,log-dev.yml,server.yml
+        shared-dataids: actuate-monitor.yml,nacos-discovery-dev.yml,log-dev.yml,server.ymlz,ipkin-dev.yml
         # 需要刷新的配置文件
-        refreshable-dataids: actuate-monitor.yml,nacos-discovery-dev.yml,log-dev.yml,server.yml
+        refreshable-dataids: actuate-monitor.yml,nacos-discovery-dev.yml,log-dev.yml,server.yml,zipkin-dev.yml
 
