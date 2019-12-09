@@ -7,12 +7,14 @@
     <groupId>com.cloud-edu</groupId>
     <artifactId>edu-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <modules>
         <module>../edu-gateway</module>
         <module>../edu-common-starter</module>
-        <module>../edu-moitor-admin</module>
+        <module>../edu-monitor-admin</module>
         <module>../edu-zipkin-server</module>
+        <module>../edu-user-center</module>
     </modules>
 
     <parent>
