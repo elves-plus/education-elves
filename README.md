@@ -5,4 +5,10 @@
 ### edu-gateway 微服务网关服务
 
 ### edu-common-starter 封装自己服务的starter
-   - redis-starter 封装redis工厂、redistemplate模板、序列化方式。
+
+    - redis-starter 封装redis工厂、redistemplate模板、序列化方式。
+
+
+
+### 协议约定
+    - nacos 配置中心yaml后缀是项目的主要配置文件。yml后缀的文件，是共享配置文件
