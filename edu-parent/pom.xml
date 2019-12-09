@@ -11,6 +11,8 @@
     <modules>
         <module>../edu-gateway</module>
         <module>../edu-common-starter</module>
+        <module>../edu-moitor-admin</module>
+        <module>../edu-zipkin-server</module>
     </modules>
 
     <parent>

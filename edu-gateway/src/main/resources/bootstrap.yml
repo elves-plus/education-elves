@@ -20,10 +20,9 @@ spring:
           file-extension: yaml
           timeout: 12000
           # 共享配置文件
-          shared-dataids: redis-dev.yml,actuate-monitor.yml,nacos-discovery-dev.yml,log-dev.yml,server.yml
+          shared-dataids: redis-dev.yml,actuate-monitor.yml,nacos-discovery-dev.yml,log-dev.yml,server.yml,zipkin-dev.yml
           # 需要刷新的配置文件
-          refreshable-dataids: redis-dev.yml,actuate-monitor.yml,nacos-discovery-dev.yml,log-dev.yml,server.yml
-
+          refreshable-dataids: redis-dev.yml,actuate-monitor.yml,nacos-discovery-dev.yml,log-dev.yml,server.yml,zipkin-dev.yml
 
 logging:
   level:
