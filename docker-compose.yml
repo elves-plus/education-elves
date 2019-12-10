@@ -1,0 +1,56 @@
+version: '3.2'
+
+services:
+  edu-gateway:
+    build:
+      context: edu-gateway/
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./skyWalking/agent/ /agent/
+    environment:
+      ES_JAVA_OPTS: "-Xmx1024m -Xms1024m"
+    networks:
+      - edu_network
+
+  edu-zipkin-server:
+    build:
+      context: edu-zipkin-server/
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./skyWalking/agent/ /agent/
+    environment:
+      ES_JAVA_OPTS: "-Xmx1024m -Xms1024m"
+
+    networks:
+      - edu_network
+
+  edu-monitor-admin:
+    build:
+      context: edu-monitor-admin/
+    ports:
+      - "28080:28080"
+    environment:
+      ES_JAVA_OPTS: "-Xmx1024m -Xms1024m"
+    volumes:
+      - ./skyWalking/agent/ /agent/
+    networks:
+      - edu_network
+
+  edu-user-center:
+    build:
+      context: edu-user-center/user-web/
+    ports:
+      - "8081:8080"
+    environment:
+      ES_JAVA_OPTS: "-Xmx1024m -Xms1024m"
+    volumes:
+      - ./skyWalking/agent/ /agent/
+    networks:
+      - edu_network
+
+
+networks:
+  edu_network:
+    driver: bridge

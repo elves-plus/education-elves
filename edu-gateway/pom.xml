@@ -53,7 +53,7 @@
         </dependency>
 
         <dependency>
-            <artifactId>edu-common-starter</artifactId>
+            <artifactId>common-redis-starter</artifactId>
             <groupId>com.cloud.edu</groupId>
         </dependency>
 

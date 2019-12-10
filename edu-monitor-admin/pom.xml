@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <groupId>com.cloud.edu</groupId>
-    <artifactId>edu-moitor-admin</artifactId>
+    <artifactId>edu-monitor-admin</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
