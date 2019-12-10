@@ -12,7 +12,7 @@
 /.settings/
 target/*
 */target/*
-*.class 
+*.class
 *.project
 .idea
 ### IntelliJ IDEA ###
@@ -37,3 +37,4 @@ var
 target/*
 */target/
 target
+*/skyWalking/
