@@ -14,7 +14,7 @@ target/*
 */target/*
 *.class
 *.project
-.idea
+.ideax
 ### IntelliJ IDEA ###
 .idea
 *.iws
@@ -37,4 +37,17 @@ var
 target/*
 */target/
 target
-*/skyWalking/
+
+edu-zipkin-server/skyWalking/*
+*/user-web/skyWalking/*
+edu-monitor-admin/skyWalking/*
+edu-gateway/skyWalking/*
+
+edu-common-starter/common-redis-starter/src/test/
+edu-gateway/src/test/
+edu-monitor-admin/src/test/
+edu-user-center/user-api/src/test/
+edu-user-center/user-common/src/test/
+edu-user-center/user-service/src/test/
+edu-user-center/user-web/src/test/
+edu-zipkin-server/src/test/
