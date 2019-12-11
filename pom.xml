@@ -143,4 +143,38 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
+
+
+
+
+    <!-- 设定团队持续集成发布包服务器 -->
+    <distributionManagement>
+        <repository>
+            <id>edu</id>
+            <name>Public Repositories</name>
+            <url>http://112.126.69.116:8084/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>edu</id>
+            <name>Public Repositories</name>
+            <url>http://112.126.69.116:8084/repository/maven-snapshots</url>
+            <uniqueVersion>true</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>edu</id>
+            <name>Nexus Repository</name>
+            <url>http://112.126.69.116:8084/repository/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <!--snapshots默认是关闭的,需要开启  -->
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
 </project>
