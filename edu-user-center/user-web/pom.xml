@@ -11,5 +11,16 @@
 
     <artifactId>user-web</artifactId>
 
+    <!-- web模块必须都添加此参数。deploy 跳过此模块 -->
+    <properties>
+        <maven.deploy.skip>true</maven.deploy.skip>
+    </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.cloud.edu</groupId>
+            <artifactId>user-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 </project>

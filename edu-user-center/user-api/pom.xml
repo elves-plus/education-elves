@@ -11,5 +11,11 @@
 
     <artifactId>user-api</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.cloud.edu</groupId>
+            <artifactId>edu-common-db</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.cloud-edu</groupId>
+    <groupId>com.cloud.edu</groupId>
     <artifactId>edu-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -15,6 +15,7 @@
         <module>edu-monitor-admin</module>
         <module>edu-zipkin-server</module>
         <module>edu-user-center</module>
+        <module>edu-common</module>
     </modules>
 
     <parent>
@@ -111,6 +112,13 @@
             <dependency>
                 <artifactId>user-api</artifactId>
                 <groupId>com.cloud.edu</groupId>
+                <version>${project.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.cloud.edu</groupId>
+                <artifactId>edu-common-db</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
