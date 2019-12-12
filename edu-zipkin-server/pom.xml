@@ -13,6 +13,10 @@
     <artifactId>edu-zipkin-server</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <maven.deploy.skip>true</maven.deploy.skip>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
