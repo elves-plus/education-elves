@@ -16,5 +16,11 @@
             <groupId>com.cloud.edu</groupId>
             <artifactId>user-api</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.cloud.edu</groupId>
+            <artifactId>user-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 </project>

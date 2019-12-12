@@ -12,4 +12,13 @@
     <artifactId>user-common</artifactId>
 
 
+    <dependencies>
+
+        <dependency>
+            <groupId>com.cloud.edu</groupId>
+            <artifactId>edu-common-basic</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
 </project>
